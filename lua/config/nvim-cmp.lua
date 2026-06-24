@@ -97,3 +97,6 @@ vim.lsp.config('gopls', {
     capabilities = capabilities
 })
 
+vim.lsp.config('lua_ls', {
+    capabilities = capabilities
+})

@@ -12,6 +12,7 @@ sudo pacman -S rust-analyzer
 sudo pacman -S jdtls
 sudo pacman -S gopls
 sudo pacman -S pyright
+sudo pacman -S lua-language-server
 
 # Treesitter
 sudo pacman -S tree-sitter-cli
