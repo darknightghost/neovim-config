@@ -47,11 +47,11 @@ vim.lsp.config('lua_ls', {
 })
 
 
-vim.keymap.set("n", "<C-t>", "<C-o>")
-vim.keymap.set("i", "<C-t>", "<C-o>")
-
+-- vim.keymap.set("n", "<C-t>", "<C-o>")
+-- vim.keymap.set("i", "<C-t>", "<C-o>")
+ 
 vim.keymap.set("n", "<C-]>", "<ESC>:lua vim.lsp.buf.declaration()<CR>")
 vim.keymap.set("i", "<C-]>", "<ESC>:lua vim.lsp.buf.declaration()<CR>")
 
-vim.keymap.set("n", "<C-[>", "<ESC>:lua vim.lsp.buf.definition()<CR>")
-vim.keymap.set("i", "<C-[>", "<ESC>:lua vim.lsp.buf.definition()<CR>")
+vim.keymap.set("n", "<C-\\>", "<ESC>:lua vim.lsp.buf.definition()<CR>")
+vim.keymap.set("i", "<C-\\>", "<ESC>:lua vim.lsp.buf.definition()<CR>")
