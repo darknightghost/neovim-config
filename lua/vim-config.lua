@@ -81,11 +81,10 @@ function format_and_save()
     -- Save file.
     vim.cmd("w!")
     local filename = vim.cmd("echo expand(\'%:p\')")
-    local line_num = vim.cmd("echo line(\".\")")
 
     local format_script = vim.fn.stdpath("config") .. "/call-format"
     if vim.fn.executable(format_script) == 1 then
-        vim.cmd("exec \"! /usr/bin/python3 /usr/bin/ht-code-format " .. filename .. "\"")
+        vim.fn.system("\"" .. format_script .. "\" \"" .. filename .. "\"")
         vim.cmd("e!")
     end
 
