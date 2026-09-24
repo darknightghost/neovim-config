@@ -37,7 +37,7 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 -- Indent.
 vim.cmd.filetype("plugin", "indent", "on")
 vim.opt.expandtab = true
-vim.opt.smarttab = false
+vim.opt.smarttab = true
 vim.opt.softtabstop = 4
 vim.opt.tabstop = 4
 vim.opt.autowrite = true

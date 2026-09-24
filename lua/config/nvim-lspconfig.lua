@@ -1,7 +1,27 @@
 -- C++
+vim.lsp.config('clangd', {
+  cmd = {
+    "clangd",
+    "--header-insertion=never",
+  },
+  settings = {}
+})
 vim.lsp.enable('clangd')
 
 -- Python
+vim.lsp.config('pyright', {
+  settings = {
+    pyright = {
+      disableOrganizeImports = true,
+    },
+    python = {
+      analysis = {
+        autoImportCompletions = false,
+        autoSearchPaths = false,
+      },
+    },
+  },
+})
 vim.lsp.enable('pyright')
 
 -- Java
