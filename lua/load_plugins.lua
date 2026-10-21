@@ -11,10 +11,11 @@ local plugins = {
     "nvim-cmp",
     "colorful-winsep",
     "cyberdream",
+    "avante",
 }
 
 -- Setup plugins.
-for i, name in ipairs(plugins) do
+for _, name in ipairs(plugins) do
     local module_name = "config." .. name
     require(module_name)
 end
